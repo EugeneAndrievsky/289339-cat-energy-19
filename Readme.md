@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Евгений Андриевский](https://up.htmlacademy.ru/adaptive/19/user/289339).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Перепелка](https://htmlacademy.ru/profile/id88866).
 
 ---
 
