@@ -26,12 +26,12 @@
   text-transform: uppercase;
 
   &--slim {
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
   }
 
   &--pro {
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
   }
 
@@ -72,6 +72,6 @@
 
     width: 25px;
     height: 12px;
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
   }
 }
