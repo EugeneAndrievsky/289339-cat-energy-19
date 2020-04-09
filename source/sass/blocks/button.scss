@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $leaf;
+  text-decoration: none;
+
+  &--show-all {
+    color: $grey;
+
+    background-color: $lightgrey;
+  }
+}

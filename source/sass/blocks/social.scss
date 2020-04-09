@@ -1,0 +1,29 @@
+.social__list {
+  @include clear-list;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  vertical-align: top;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../img/icon-vk.svg");
+  }
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+}

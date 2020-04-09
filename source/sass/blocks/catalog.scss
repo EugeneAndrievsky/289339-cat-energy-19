@@ -1,0 +1,21 @@
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.catalog__list {
+  @include clear-list;
+}
+
+.catalog__item {
+  padding: 25px 0;
+}

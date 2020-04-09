@@ -1,0 +1,44 @@
+.product {
+  &--add-more {
+    padding-top: 55px;
+
+    text-align: center;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 31px;
+  }
+}
+
+.product__title-link {
+  text-decoration: none;
+}
+
+.product__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $black;
+
+  text-decoration: none;
+}
+
+.product__subtitle {
+  font-family: $arial;
+}
+
+.product__attributes {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $arial;
+}
+
+.product__order {
+  width: 100%;
+
+  text-align: center;
+}

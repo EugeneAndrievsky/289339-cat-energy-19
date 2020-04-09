@@ -1,0 +1,35 @@
+.promo {
+  padding-top: 30px;
+  padding-bottom: 22px;
+
+  font-size: 14px;
+  line-height: 1;
+  font-family: $oswald;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.promo__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: none;
+}
+
+.promo__slogan-text {
+  font-weight: 400;
+}
+
+.promo__to-program {
+  width: 280px;
+}
