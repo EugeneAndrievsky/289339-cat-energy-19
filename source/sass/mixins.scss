@@ -4,3 +4,19 @@
 
   list-style: none;
 }
+
+@mixin container() {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
