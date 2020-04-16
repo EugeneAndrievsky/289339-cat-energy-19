@@ -42,3 +42,57 @@
 
   text-align: center;
 }
+
+
+@media (min-width: $tablet-width) {
+  .product {
+    padding: 40px;
+    padding-top: 165px;
+
+    text-align: center;
+
+    &--add-more {
+      border: 1px solid #cdcdcd;
+      background-color: $white;
+      background-image: url("../img/icon-plus.svg");
+      background-position: center 55px;
+      background-size: 61px;
+    }
+  }
+
+  .product__link {
+    position: relative;
+
+    display: block;
+  }
+
+  .product__image {
+    position: absolute;
+    bottom: 40px;
+    margin-left: calc(-324px / 2);
+
+    max-width: none;
+  }
+
+  .product__attributes {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .product__value {
+    text-align: right;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .product {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .product__image {
+    margin-left: calc(-245px / 2);
+  }
+}

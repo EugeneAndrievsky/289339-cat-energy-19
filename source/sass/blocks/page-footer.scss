@@ -1,12 +1,14 @@
 .page-footer {
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 22px;
 
   text-align: center;
 
   background-color: $lightgrey;
+}
+
+.page-footer__wrapper {
+  @include container;
 }
 
 .page-footer__copyright {
@@ -22,6 +24,23 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 27px 34px;
+  background-size: 27px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__copyright {
+    width: auto;
+    padding-right: 50px;
+  }
 }

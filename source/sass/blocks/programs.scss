@@ -1,6 +1,5 @@
 .programs__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include container;
 }
 
 .programs__list {
@@ -8,6 +7,7 @@
 }
 
 .programs__item {
+  margin-bottom: 20px;
   padding: 22px 20px;
   background-color: $lightgrey;
 }
@@ -25,27 +25,16 @@
   color: $black;
   text-transform: uppercase;
 
+  background-repeat: no-repeat;
+
   &--slim {
-    background-image: url("../img/icon-cat-slim.svg");
-    background-repeat: no-repeat;
+    background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+    background-size: 35px, 50px;
   }
 
   &--pro {
-    background-image: url("../img/icon-cat-pro.svg");
-    background-repeat: no-repeat;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-    background-color: $leaf;
+    background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+    background-size: 67px, 50px;
   }
 }
 
@@ -73,5 +62,63 @@
     width: 25px;
     height: 12px;
     background-image: url("../img/icon-right-arrow-long.svg");
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    padding-top: 80px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 60px;
+
+    background-position: right;
+    background-repeat: no-repeat;
+
+    &--slim {
+      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+      background-size: 141px, 200px;
+    }
+
+    &--pro {
+      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+      background-size: 268px, 200px;
+    }
+  }
+
+  .programs__title {
+    padding: 0;
+
+    background-image: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .programs__item {
+    flex-basis: 570px;
+
+    background-image: none;
+  }
+
+  .programs__title {
+    padding-left: 165px;
+
+    &--slim {
+      background-image: url("../img/icon-cat-slim.svg"), url("../img/icon-circle.svg");
+      background-size: 71px, 100px;
+    }
+
+    &--pro {
+      background-image: url("../img/icon-cat-pro.svg"), url("../img/icon-circle.svg");
+      background-size: 134px, 100px;
+    }
   }
 }
