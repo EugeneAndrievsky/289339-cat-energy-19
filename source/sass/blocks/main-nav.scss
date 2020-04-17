@@ -33,10 +33,20 @@
 }
 
 .main-nav__item {
+  position: relative;
+
   padding-top: 22px;
   padding-bottom: 22px;
 
   border-top: 1px solid $lightgrey;
+
+  &:not(.main-nav__item--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.main-nav__item--current):active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__link {
@@ -71,6 +81,17 @@
     &:last-child {
       margin-right: 0;
     }
+
+    &--current::before {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: $leaf;
+    }
   }
 
   .main-nav__link {
@@ -93,6 +114,11 @@
     .main-nav__link {
       color: $white;
     }
+
+    &::before {
+      background-color: $white;
+    }
+  }
 
   .main-nav__link {
     color: $black;
