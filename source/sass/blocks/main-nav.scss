@@ -1,6 +1,4 @@
 .main-nav {
-  display: none; //temp
-
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -10,17 +8,35 @@
   color: $black;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+
+  width: 25px;
+  height: 19px;
+  padding: 0;
+
+  font-size: 0;
+
+  border: 0;
+  background-color: $white;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
 .main-nav__list {
   @include clear-list;
+
+  // display: none;
 }
 
 .main-nav__item {
   padding-top: 22px;
-  padding-right: 10px;
-  padding-left: 10px;
   padding-bottom: 22px;
 
-  // border-bottom: 1px solid $lightgrey;
+  border-top: 1px solid $lightgrey;
 }
 
 .main-nav__link {
@@ -31,8 +47,10 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    display: block;
-    padding-top: 10px; //temp
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $dark;
   }
 
   .main-nav__toggle {
@@ -44,8 +62,15 @@
   }
 
   .main-nav__item {
-    padding-top: 0;
+    margin-right: 35px;
+    padding-top: 18px;
     padding-bottom: 0;
+
+    border-top: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__link {
@@ -54,11 +79,22 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__link {
+  .main-nav {
+    font-size: 20px;
+    line-height: 25px;
     color: $black;
+  }
 
-    &--index {
+  .main-nav__item {
+    padding-top: 21px;
+  }
+
+  .main-nav__item--index {
+    .main-nav__link {
       color: $white;
     }
+
+  .main-nav__link {
+    color: $black;
   }
 }

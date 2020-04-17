@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding-top: 14px;
+  padding-top: 11px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 11px;
@@ -8,8 +8,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: $white;
   text-transform: uppercase;
+  vertical-align: middle;
+  color: $white;
+
 
   background-color: $leaf;
   text-decoration: none;
