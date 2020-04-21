@@ -1,13 +1,16 @@
-.features {
+.features__wrapper {
   @include container;
+
+  margin-bottom: 40px;
 }
 
 .features__title {
   margin-top: 0;
+  margin-bottom: 40px;
 
   font-weight: 400;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
   color: $black;
 }
 
@@ -17,10 +20,15 @@
 
 .features__item {
   position: relative;
-
+  min-height: 60px;
+  margin-bottom: 20px;
   padding-left: 80px;
 
   font-family: $arial;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -55,20 +63,35 @@
 
 
 @media (min-width: $tablet-width) {
+  .features__title {
+    margin-bottom: 60px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .features__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 55px;
+
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .features__item {
-    position: relative;
-
     width: 250px;
     min-height: 230px;
     margin-bottom: 90px;
     padding-top: 110px;
     padding-left: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-last-of-type(-n+2) {
+      margin-bottom: 0;
+    }
 
     &::before {
       width: 80px;
@@ -88,8 +111,6 @@
       line-height: 205px;
       font-family: $oswald;
       color: $lightgrey;
-
-      background-color: lightsalmon; //temp
     }
 
     &--natural::after {
@@ -107,5 +128,21 @@
     &--time::after {
       content: "4";
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    margin-bottom: 90px;
+  }
+
+  .features__list {
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
+
+  .features__item {
+    margin-bottom: 0;
   }
 }
