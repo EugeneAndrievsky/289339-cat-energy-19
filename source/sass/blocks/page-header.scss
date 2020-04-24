@@ -1,14 +1,32 @@
 .page-header__wrapper {
   @include container;
 
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding-top: 11px;
-  padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+
+  border-bottom: 1px solid $lightgrey;
 }
 
 .page-header__logo {
-  display: block;
+  width: 191px;
+  padding-left: 20px;
+  padding-bottom: 15px;
 
-  // border-bottom: 1px solid $lightgrey;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__logo-image {
@@ -18,27 +36,25 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
-    min-height: 100px; //temp
-  }
-
   .page-header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    padding-top: 25px; //temp
+    flex-direction: row;
+    padding-top: 24px;
+
+    border-bottom: none;
   }
 
   .page-header__logo {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 174px;
+    height: 59px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    min-height: 150px; //temp
-
     &--index {
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: right top;
@@ -49,5 +65,10 @@
 
   .page-header__wrapper {
     padding-top: 53px;
+  }
+
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
