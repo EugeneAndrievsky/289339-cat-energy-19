@@ -14,7 +14,11 @@
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-position: left 50% bottom 65px, top;
   background-repeat: no-repeat;
-  background-size: auto, contain;
+  background-size: 280px, contain;
+
+  @media ($retina) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -52,6 +56,11 @@
 
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: bottom;
+    background-size: 709px;
+
+    @media ($retina) {
+      background-image: url("../img/index-can-tablet@2x.jpg");
+    }
   }
 
   .promo__title {
@@ -86,6 +95,11 @@
 
     background-image: url("../img/index-can-desktop@1x.png");
     background-position: 450px 30px;
+    background-size: 522px;
+
+    @media ($retina) {
+      background-image: url("../img/index-can-desktop@2x.png");
+    }
   }
 
   .promo__slogan {
