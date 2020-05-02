@@ -14,7 +14,6 @@
 }
 
 .page-header__logo {
-  width: 191px;
   padding-left: 20px;
   padding-bottom: 15px;
 
@@ -60,6 +59,10 @@
       background-position: right top;
       background-size: 50%;
       background-repeat: no-repeat;
+
+      @media ($retina) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 

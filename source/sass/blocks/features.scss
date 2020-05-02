@@ -42,6 +42,7 @@
     background-color: $leaf;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 50px;
   }
 
   &--natural::before {
@@ -58,6 +59,24 @@
 
   &--time::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  @media ($retina) {
+    &--natural::before {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+
+    &--fast::before {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+
+    &--food::before {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+
+    &--time::before {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
   }
 }
 
