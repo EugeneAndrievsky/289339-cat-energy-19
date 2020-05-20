@@ -34,10 +34,6 @@
   margin-bottom: 300px;
 }
 
-.promo__slogan-text {
-  font-weight: 400;
-}
-
 .promo__to-program {
   width: 100%;
 }
@@ -89,12 +85,12 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 630px;
+    min-height: 500px;
     padding-top: 108px;
     padding-left: 80px;
 
     background-image: url("../img/index-can-desktop@1x.png");
-    background-position: 450px 30px;
+    background-position: 460px 30px;
     background-size: 522px;
 
     @media ($retina) {
