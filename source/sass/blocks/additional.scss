@@ -1,3 +1,66 @@
 .additional__wrapper {
   @include container;
 }
+
+.additional__heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.additional__list {
+  @include clear-list;
+
+  margin-bottom: 40px;
+}
+
+.additional__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.additional__description {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: $arial;
+  color: $grey;
+}
+
+.additional__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $dark;
+}
+
+.additional__promo {
+  width: 100%;
+  height: 289px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-top: 190px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $arial;
+  text-align: center;
+  color: $white;
+
+  background-color: $leaf;
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 56px 61px, cover;
+  background-position: 50% 65px, center;
+  background-repeat: no-repeat;
+}

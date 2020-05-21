@@ -37,89 +37,93 @@
 
   <main class="page-main">
     <section class="order">
-      <header class="order__header">
-        <h1 class="order__title">Подбор программы</h1>
-        <p class="order__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </header>
+      <div class="order__wrapper">
+        <header class="order__header">
+          <h1 class="order__title">Подбор программы</h1>
+          <p class="order__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </header>
 
-      <form class="order__form  form" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__section">
-          <h2 class="form__title  visually-hidden">Личные данные кота</h2>
-          <p class="form__group">
-            <label class="form__label" for="name">Имя:* </label>
-            <input class="form__field" type="text" name="name" id="name" placeholder="Барсик">
-          </p>
-          <p class="form__group">
-            <label class="form__label" for="weight">Вес (кг):* </label>
-            <input class="form__field" type="text" name="weight" id="weight" placeholder="7">
-          </p>
-          <p class="form__group">
-            <label class="form__label" for="age">Возраст (лет): </label>
-            <input class="form__field" type="text" name="age" id="age" placeholder="7">
-          </p>
-        </fieldset>
+        <form class="order__form  form" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__section  form__section--personal">
+            <h2 class="form__title  visually-hidden">Личные данные кота</h2>
+            <p class="form__group">
+              <label class="form__label" for="name">Имя:* </label>
+              <input class="form__field" type="text" name="name" id="name" placeholder="Барсик">
+            </p>
+            <p class="form__group">
+              <label class="form__label" for="weight">Вес (кг):* </label>
+              <input class="form__field" type="text" name="weight" id="weight" placeholder="7">
+            </p>
+            <p class="form__group">
+              <label class="form__label" for="age">Возраст (лет): </label>
+              <input class="form__field" type="text" name="age" id="age" placeholder="7">
+            </p>
+          </fieldset>
 
-        <fieldset class="form__section">
-          <h2 class="form__title  visually-hidden">Выбор программы</h2>
-          <p class="form__group">
-            <input class="form__radio" type="radio" name="program" value="slim" id="program-choice-1">
-            <label class="form__label" for="program-choice-1">Похудение</label>
-          </p>
-          <p class="form__group">
-            <input class="form__radio" type="radio" name="program" value="pro" id="program-choice-2">
-            <label class="form__label" for="program-choice-2">Набор массы</label></p>
-          <p class="form__group">
-            <input class="form__radio" type="radio" name="program" value="advice" id="program-choice-3">
-            <label class="form__label" for="program-choice-3">Не знаю (нужен ваш совет)</label></p>
-        </fieldset>
+          <fieldset class="form__section  form__section--program">
+            <h2 class="form__title  visually-hidden">Выбор программы</h2>
+            <p class="form__group">
+              <input class="form__radio" type="radio" name="program" value="slim" id="program-choice-1">
+              <label class="form__label" for="program-choice-1">Похудение</label>
+            </p>
+            <p class="form__group">
+              <input class="form__radio" type="radio" name="program" value="pro" id="program-choice-2">
+              <label class="form__label" for="program-choice-2">Набор массы</label></p>
+            <p class="form__group">
+              <input class="form__radio" type="radio" name="program" value="advice" id="program-choice-3">
+              <label class="form__label" for="program-choice-3">Не знаю (нужен ваш совет)</label></p>
+          </fieldset>
 
-        <fieldset class="form__section">
-          <h2 class="form__title">Контактные данные<br> (владельца кота)</h2>
-          <p class="form__group">
-            <label class="form__label" for="email">E-mail:* </label>
-            <input class="form__field" type="email" name="email" id="email">
-          </p>
-          <p class="form__group">
-            <label class="form__label" for="phone">Телефон:* </label>
-            <input class="form__field" type="tel" name="phone" id="phone">
-          </p>
-        </fieldset>
+          <fieldset class="form__section">
+            <h2 class="form__title">Контактные данные<br> (владельца кота)</h2>
+            <p class="form__group">
+              <label class="form__label" for="email">E-mail:* </label>
+              <input class="form__field  form__field--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="form__group">
+              <label class="form__label" for="phone">Телефон:* </label>
+              <input class="form__field  form__field--phone" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
 
-        <fieldset class="form__section">
-          <h2 class="form__title">Комментарий</h2>
-          <textarea class="form__field--area" name="comment">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
+          <fieldset class="form__section">
+            <h2 class="form__title">Комментарий</h2>
+            <textarea class="form__field--area" name="comment">Расскажите обо всех повадках кота</textarea>
+          </fieldset>
 
-        <fieldset class="form__section">
-          <h2 class="form__title">Дополнительно</h2>
-          <p class="form__group">
-            <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
-            <label class="form__label" for="sugar">Сахарозаменитель</label>
-          </p>
-          <p class="form__group">
-            <input class="form__checkbox" type="checkbox" name="water" id="water">
-            <label class="form__label" for="water">Питьевая вода</label>
-          </p>
-          <p class="form__group">
-            <input class="form__checkbox" type="checkbox" name="milk" id="milk">
-            <label class="form__label" for="milk">Молоко</label>
-          </p>
-          <p class="form__group">
-            <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
-            <label class="form__label" for="vitamins">Витамины</label>
-          </p>
-        </fieldset>
+          <fieldset class="form__section">
+            <h2 class="form__title">Дополнительно</h2>
+            <p class="form__group">
+              <input class="form__checkbox" type="checkbox" name="sugar" id="sugar" checked>
+              <label class="form__label" for="sugar">Сахарозаменитель</label>
+            </p>
+            <p class="form__group">
+              <input class="form__checkbox" type="checkbox" name="water" id="water">
+              <label class="form__label" for="water">Питьевая вода</label>
+            </p>
+            <p class="form__group">
+              <input class="form__checkbox" type="checkbox" name="milk" id="milk">
+              <label class="form__label" for="milk">Молоко</label>
+            </p>
+            <p class="form__group">
+              <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins">
+              <label class="form__label" for="vitamins">Витамины</label>
+            </p>
+          </fieldset>
 
-        <button class="form__order  button" type="submit">Отправить заявку</button>
-        <p class="form__note">* &mdash; Обязательное поле</p>
-      </form>
+          <button class="form__order  button" type="submit">Отправить заявку</button>
+          <p class="form__note">* &mdash; Обязательные поле</p>
+        </form>
+      </div>
     </section>
 
     <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+      <header class="contacts__header">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+      </header>
       <div class="contacts__map  map">
-        <img class="map__image" src="https://placehold.it/320x400" width="320" height="400" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        <iframe src="https://yandex.com/map-widget/v1/-/CCQBjKRosA"></iframe>
       </div>
     </section>
   </main>
