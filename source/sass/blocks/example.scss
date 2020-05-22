@@ -1,0 +1,105 @@
+.example {
+  background-color: $lightgrey;
+}
+
+.example__wrapper {
+  @include container;
+
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.example__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+}
+
+.example__text {
+  margin-top: 0;
+
+  font-family: $arial;
+  color: $grey;
+}
+
+.example__feature {
+  text-align: center;
+
+  border: 1px solid #cdcdcd;
+}
+
+.example__result {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.expamle__result-description {
+  font-size: 12px;
+  line-height: 12px;
+  font-family: $arial;
+  color: $grey;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+.example__figure {
+  position: relative;
+
+  margin: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 240px;
+}
+
+.example__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 320px;
+  height: 240px;
+
+  &--before {
+    display: block;
+  }
+
+  &--after {
+    display: none;
+  }
+}
+
+.example__caption {
+  display: flex;
+  justify-content: center;
+}
+
+.example__button {
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $black;
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.example__range {
+  width: 85px;
+  margin: 0 18px;
+
+  background-color: rgba(255, 0, 0, 0.2); //temp
+}

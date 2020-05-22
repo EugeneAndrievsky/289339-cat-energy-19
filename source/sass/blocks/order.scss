@@ -1,0 +1,28 @@
+.order__header {
+  margin-bottom: 40px;
+}
+
+.order__wrapper {
+  @include container;
+  padding-top: 18px;
+  padding-bottom: 35px;
+}
+
+.order__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.order__description {
+  width: 230px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
