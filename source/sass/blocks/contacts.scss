@@ -33,3 +33,20 @@
 .contacts__map {
   height: 400px;
 }
+
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__header {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    padding: 70px; //temp
+
+    background-color: $white;
+  }
+}
