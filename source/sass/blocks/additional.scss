@@ -106,6 +106,10 @@
   background-size: 56px 61px, cover;
   background-position: 50% 65px, center;
   background-repeat: no-repeat;
+
+  @media ($retina) {
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -166,6 +170,10 @@
 
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
     background-position: 90px 65px, center;
+
+    @media ($retina) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
@@ -238,5 +246,9 @@
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
     background-size: 56px 61px, cover;
     background-position: 50% 65px, center;
+
+    @media ($retina) {
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 }
