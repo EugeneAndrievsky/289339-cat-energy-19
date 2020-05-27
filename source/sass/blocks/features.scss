@@ -82,6 +82,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .features {
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 595px;
+  }
+
   .features__title {
     margin-bottom: 60px;
 
@@ -94,8 +99,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 55px;
-
-    border-bottom: 1px solid #e6e6e6;
   }
 
   .features__item {
@@ -151,8 +154,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 0;
+  }
+
   .features__wrapper {
-    margin-bottom: 90px;
+    margin-bottom: 217px;
   }
 
   .features__list {

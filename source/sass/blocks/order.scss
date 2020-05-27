@@ -1,15 +1,16 @@
 .order__header {
-  margin-bottom: 40px;
+  @include container;
+
+  margin-bottom: 37px;
 }
 
-.order__wrapper {
-  @include container;
-  padding-top: 18px;
-  padding-bottom: 35px;
+.order__form {
+  padding-bottom: 32px;
 }
 
 .order__title {
   margin-top: 0;
+  margin-bottom: 23px;
 
   font-weight: 400;
   font-size: 36px;
@@ -28,7 +29,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order__form {
+    padding-bottom: 72px;
+  }
+
+  .order__header {
+    margin-bottom: 65px;
+  }
+
   .order__title {
+    margin-bottom: 57px;
+
     font-size: 60px;
   }
 
@@ -42,6 +53,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order__wrapper {
+    padding-top: 73px;
+    padding-bottom: 82px;
+  }
+
   .order__description {
     margin-left: 0;
   }
