@@ -248,6 +248,7 @@
   .programs__item {
     flex-basis: 570px;
     margin-bottom: 0;
+    padding-top: 50px;
 
     &::before,
     &::after {
@@ -293,6 +294,7 @@
   }
 
   .programs__text {
+    max-width: none;
     margin-bottom: 32px;
   }
 }
