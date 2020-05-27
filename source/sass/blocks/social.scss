@@ -17,35 +17,32 @@
 .social__link {
   display: block;
 
-  background-repeat: no-repeat;
-  background-position: center;
+  &:hover .social__icon {
+    fill: $leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
 
   &--vkontakte {
     width: 22px;
-    height: 12px;
-
-    background-image: url("../img/icon-vk.svg");
-    background-size: 22px;
+    // height: 12px;
+    height: 19px;
   }
 
   &--instagram {
     width: 17px;
     height: 17px;
-
-    background-image: url("../img/icon-insta.svg");
-    background-size: 17px;
   }
 
   &--facebook {
     width: 10px;
     height: 19px;
-
-    background-image: url("../img/icon-fb.svg");
-    background-size: 10px;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 

@@ -79,6 +79,8 @@
 }
 
 .form__group {
+  position: relative;
+
   display: flex;
   align-items: center;
   margin-top: 0;
@@ -223,23 +225,17 @@
     border: 2px solid $grey;
   }
 
+  &:focus ~ .form__icon {
+    fill: $leaf;
+  }
+
   &:invalid {
     border: 2px solid #ff8282;
     box-shadow: none;
   }
 
-  &--email {
-    background-image: url("../img/icon-mail.svg");
-    background-size: 18px 14px;
-    background-position: right 15px center;
-    background-repeat: no-repeat;
-  }
-
-  &--phone {
-    background-image: url("../img/icon-phone.svg");
-    background-size: 21px 21px;
-    background-position: right 13px center;
-    background-repeat: no-repeat;
+  &:invalid ~ .form__icon {
+    fill: #ff8282;
   }
 
   &--area {
@@ -253,6 +249,17 @@
     color: $grey;
 
     border: 1px solid rgba(205, 205, 205, 0.5);
+  }
+}
+
+.form__icon {
+  position: absolute;
+  right: 17px;
+
+  fill: #222222;
+
+  &--phone {
+    right: 15px;
   }
 }
 
@@ -391,14 +398,6 @@
   .form__field {
     min-height: 52px;
 
-    &--email {
-      background-position: right 20px center;
-    }
-
-    &--phone {
-      background-position: right 17px center;
-    }
-
     &--area {
       width: 100%;
       height: 150px;
@@ -455,9 +454,7 @@
     }
 
     &--contacts {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+      display: block;
     }
 
     &--additional {
@@ -485,8 +482,14 @@
 
   .form__group {
     &--contacts {
+      float: left;
       width: 570px;
-      margin-bottom: 0;
+      margin: 0;
+      margin-right: 80px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &--additional {

@@ -70,7 +70,7 @@
     &--index {
       position: relative;
 
-      min-height: 50vw; //640px; // 50% of 1280px
+      min-height: 50%;//50vw; //640px; // 50% of 1280px
     }
     // &--index {
     // background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 50%, $leaf 50%);
@@ -125,7 +125,7 @@
 // }
 //
 @media (min-width: 1440px) {
-  .page-header {
+  .page-header--index {
     min-height: 720px; // 50% of 1440px
   }
 }

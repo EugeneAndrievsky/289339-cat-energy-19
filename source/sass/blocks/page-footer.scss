@@ -36,9 +36,9 @@
 }
 
 .page-footer__copyright {
-  position: relative;
-
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding-top: 7px;
   padding-bottom: 11px;
@@ -46,28 +46,20 @@
   font-size: 16px;
   line-height: 16px;
   font-family: $arial;
+  text-decoration: none;
   text-align: left;
   color: $grey;
-
-  text-decoration: none;
 
   &:active {
     opacity: 0.3;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
+  &:hover .page-footer__copyright-icon {
+    fill: $leaf;
+  }
 
-    width: 27px;
-    height: 34px;
-
-    background-image: url("../img/icon-htmlacademy.svg");
-    background-position: center;
-    background-size: 40px;
-    background-repeat: no-repeat;
+  .page-footer__copyright-icon {
+    fill: #666666;
   }
 }
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
   <title>Cat Energy</title>
 </head>
 
@@ -85,10 +85,10 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <p class="example__feature">
-            <b class="example__result">5 кг</b> <span class="expamle__result-description">снижение веса</span>
+            <b class="example__result">5 кг</b> <span class="example__result-description">снижение веса</span>
           </p>
           <p class="example__feature">
-            <b class="example__result">60 дней</b> <span class="expamle__result-description">затрачено времени</span>
+            <b class="example__result">60 дней</b> <span class="example__result-description">затрачено времени</span>
           </p>
           <p class="example__cost">Затраты на питание: <span class="example__price">15 000 руб.</span></p>
         </div>
@@ -131,17 +131,33 @@
         <b class="social__title  visually-hidden">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
+            <a class="social__link  social__link--vkontakte" href="#">
+              <svg class="social__icon  social__icon--vkontakte" width="22" height="12">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Вконтакте</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
+            <a class="social__link  social__link--instagram" href="#">
+              <svg class="social__icon  social__icon--instagram" width="17" height="17">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Инстаграме</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+            <a class="social__link  social__link--facebook" href="#">
+              <svg class="social__icon  social__icon--facebook" width="10" height="19">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Мы в Фейсбуке</span></a>
           </li>
         </ul>
       </div>
-      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy
+        <svg class="page-footer__copyright-icon" width="40" height="50">
+          <use xlink:href="#icon-htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 
